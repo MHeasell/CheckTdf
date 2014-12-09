@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <None Include="CheckTdfRunner.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\AssemblyInfo.cs.tmpl" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TdfParserNullAdapter.cs" />

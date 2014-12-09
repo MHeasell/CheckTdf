@@ -26,6 +26,7 @@ else:
 dist_files = [
         join(slndir, "LICENSE"),
         join(slndir, "README.md"),
+        join(bindir, "CheckTdfRunner.bat"),
         join(bindir, "CheckTdf.exe"),
         join(bindir, "CheckTdf.pdb"),
         join(bindir, "HPIUtil.dll"),
