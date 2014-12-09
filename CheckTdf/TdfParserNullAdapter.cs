@@ -63,7 +63,7 @@
             if (value.Contains("="))
             {
                 this.Warning(
-                    "Property '{0}' contains '=' (is the previous property missing a semicolon?)",
+                    "Property '{0}' contains '=' (is the previous line missing a semicolon?)",
                     name,
                     this.parser.CurrentLine,
                     this.parser.CurrentColumn);
