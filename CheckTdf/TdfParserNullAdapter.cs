@@ -37,7 +37,7 @@
             if (!success)
             {
                 this.Warning(
-                    "Duplicate block '{0}'",
+                    "Block '{0}' already defined",
                     name,
                     this.parser.CurrentLine,
                     this.parser.CurrentColumn);
@@ -54,7 +54,7 @@
             if (!success)
             {
                 this.Warning(
-                    "Duplicate property '{0}'",
+                    "Property '{0}' already defined",
                     name,
                     this.parser.CurrentLine,
                     this.parser.CurrentColumn);
