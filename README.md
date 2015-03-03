@@ -42,3 +42,26 @@ It also has some defined exit codes:
 The warning and parse error code can be generated in combination
 via bitwise OR, so you may also see an exit code of `6`,
 representing that both errors and warnings were found.
+
+Example
+-------
+
+The contents of foo.tdf, which contains a missing semicolon:
+
+    [Foo]
+    {
+        varA = 1;
+        varB = 2
+        varC = 3;
+    }
+
+Run the program:
+
+    CheckTdf.exe foo.tdf
+
+Output:
+
+    test.tdf:5: Warning: Property 'varB' contains '=' (is the previous line missing a semicolon?)
+
+CheckTdf finds a problem on line 5
+and suggests that line 4 may be missing a semicolon.
